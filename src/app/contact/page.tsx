@@ -1,5 +1,3 @@
-export default () => (
-	<div>
-		<button className="btn btn-primary">click me daddy</button>
-	</div>
-)
+import Ppio from "@/components/ppio";
+
+export default () => (<Ppio/>)
