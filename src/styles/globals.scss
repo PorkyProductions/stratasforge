@@ -1,0 +1,15 @@
+$prefix: "sf-";
+$primary: #004040;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+body {
+	background-color: white;
+	color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+		color: white;
+	}
+}
