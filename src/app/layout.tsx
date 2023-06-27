@@ -4,6 +4,7 @@ import '../styles/globals.scss'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/vertical.jpg" type="image/x-icon" />
       <Script id="toggleTheme">
 						{
 							`if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -28,9 +33,11 @@ export default function RootLayout({
 							}`
 						}
 					</Script>
+      </head>
       <body className={inter.className}>
         <Navbar/>
         {children}
+        <Footer />
       </body>
     </html>
   )
