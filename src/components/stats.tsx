@@ -6,10 +6,10 @@ const stats = [
   
   export default function Example() {
 	return (
-	  <div className="py-24 sm:py-5">
-		<hr className=" h-2 border-none bg-black text-black opacity-100 p-0 m-0" ></hr>
-		<div className="bg-slate-300 m-0 p-0">
-			<div className="mx-auto max-w-7xl px-6 lg:px-8 py-5">
+	  <div className="py-24 sm:py-5 rounded-lg">
+		<hr className=" h-2 border-none bg-black text-black dark:hidden opacity-100 p-0 m-0" ></hr>
+		<div className="bg-slate-300 dark:bg-black m-0 p-0">
+			<div className="mx-auto max-w-7xl px-8 lg:px-8 py-5 dark:rounded-lg">
 				<dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
 					{stats.map((stat) => (
 					<div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">

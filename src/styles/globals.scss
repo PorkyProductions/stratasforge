@@ -6,6 +6,16 @@ body {
 	background-color: white;
 	color: black;
 }
+*::selection {
+	background-color: $primary;
+	color: white;
+	opacity: 20%;
+}
+#footer::selection {
+	background-color: lighten($primary, 30%);
+	color: white;
+	opacity: 20%;
+}
 
 @media (prefers-color-scheme: dark) {
 	body {

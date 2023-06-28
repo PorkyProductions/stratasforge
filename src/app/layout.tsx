@@ -1,12 +1,12 @@
 import {name,  description } from '@/typescript/constants'
 import './globals.css'
 import '../styles/globals.scss'
-import { Inter } from 'next/font/google'
+import { Inter_Tight } from 'next/font/google'
 import Script from 'next/script'
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const interTight = Inter_Tight({ subsets: ['latin'], weight: "variable" })
 
 export const metadata = {
   title: name,
@@ -34,7 +34,7 @@ export default function RootLayout({
 						}
 					</Script>
       </head>
-      <body className={inter.className}>
+      <body className={interTight.className}>
         <Navbar/>
         {children}
         <Footer />
