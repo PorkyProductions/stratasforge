@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import HorizontalLogo from '../../public/hotizontal.png'
 import Link from 'next/link';
+import '@/css/navbar.css'
 interface NavigationLinks {
   name: string;
   href: string;
@@ -74,6 +75,7 @@ export default () => {
                 key={link.name}
                 className="dark:text-teal-400 text-deepTeal"
                 href={link.href}
+                
               >
                 {link.name}
               </Link>
